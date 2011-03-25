@@ -1,0 +1,85 @@
+body, p, div {
+  font-family: "Trebuchet MS";
+  font-size: 12px;
+}
+
+body {
+  height: 100%;
+  text-align: left;
+}
+
+#reference {
+  position: relative;
+  background-color: #DEDEDE;
+}
+
+#reference #detail {
+  margin-right: 300px;
+  top: 350px;
+  background-color: #DEDEDE;
+}
+
+.clear {
+  clear: both;
+}
+
+#queue {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: solid 1px #666666;
+  width: 300px;
+  float: right;
+}
+
+#queue .request {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+
+#queue .request .name {
+  position: absolute;
+  left: 40px;
+  top: 3px;
+}
+
+#queue .request .artist {
+  position: absolute;
+  left: 40px;
+  top: 3px;
+}
+
+#queue img {
+  width: 32px;
+  height: 32px;
+}
+
+#queue .detail {
+  padding-left: 5px;
+
+}
+
+#queue .request {
+  cursor: pointer;
+  border-bottom: dashed inherit 2px;
+}
+
+#queue.droppable-hover {
+  border-bottom: dashed #000000 2px;
+}
+
+#queue .request.droppable-hover {
+  border-bottom: dashed #000000 2px;
+}
+
+#queue .nowPlaying {
+  background-color: #CCCCCC;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #000000;
+}

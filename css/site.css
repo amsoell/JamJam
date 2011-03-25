@@ -1,0 +1,165 @@
+body, p, div {
+  font-family: "Trebuchet MS";
+  font-size: 12px;
+}
+
+#musictree {
+  border: 1px solid #000000;
+  margin-right: 400px;
+  overflow: scroll;
+  height: 90%;
+}
+
+#musictree, #musictree ul {
+  padding-left:20px;
+  list-style: none;
+}
+#musictree ul li.albuminfo { 
+  display: none;
+}
+
+#musictree .artist {
+  cursor: pointer;
+}
+
+#musictree .album {
+  margin: 10px 0 5px 20px;
+  clear: left;
+}
+
+#musictree .album img {
+  border: solid 1px #FFFFFF;
+  width: 45px;
+  margin-right: 2px;
+  padding: 3px;
+  float: left;
+}
+
+#musictree .album img.active {
+  margin-right: 12px;
+}
+
+#musictree div.album:hover {
+  cursor: pointer;
+}
+
+#musictree div.album:hover img {
+  border-color: #000000;
+}
+
+#musictree .album .detail {
+  position: relative;
+  padding-top: 3px;
+}
+
+#musictree .album .detail .name {
+  font-weight: bold;
+}
+
+#musictree .album .detail .year {
+  font-size: 11px;
+}
+
+#musictree .album .detail .tracks {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  list-style-type: decimal;
+  display: none;
+}
+
+
+#musictree .album .detail .tracks .track {
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+#musictree .album .detail .tracks .track.queueable { 
+  color: #000000;
+  font-weight: bold; 
+}
+
+#musictree .album .detail ul.tracks li.track:hover {
+  font-style: italic;
+  background-color: #FFFFCC !important;
+}
+
+#albumtemplate { 
+  display: none; 
+}
+
+.clear {
+  clear: both;
+}
+
+#queue {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: solid 1px #666666;
+}
+
+#queue img {
+  width: 32px;
+  height: 32px;
+}
+
+#queue .detail {
+  padding-left: 5px;
+
+}
+
+#queue .request {
+  cursor: pointer;
+  border-bottom: dashed #FFFFFF 2px;
+}
+
+#queue.droppable-hover {
+  border-bottom: dashed #000000 2px;
+}
+
+#queue .request.droppable-hover {
+  border-bottom: dashed #000000 2px;
+}
+
+#queue .nowPlaying {
+  background-color: #CCCCCC;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #000000;
+}
+
+#searchField {
+  width: 320px;
+}
+
+.ac_results ul li span.coverart {
+  padding-right: 5px;
+  clear: left;
+  float: left;
+}
+
+.ac_results ul li span.details {
+  float: left;
+}
+
+.ac_results ul li .track .name {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+}
+
+.ac_results ul li .track .details .artist {
+  display: inline;
+  font-size: 11px;
+}
+
+.ac_results ul li span.details .album {
+  font-size: 11px;
+}

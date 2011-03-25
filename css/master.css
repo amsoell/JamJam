@@ -1,0 +1,336 @@
+body, p, div {
+  font-family: "Trebuchet MS";
+  font-size: 12px;
+}
+
+body {
+  height: 100%;
+  text-align: left;
+}
+
+#header {
+  background-color: #000033;
+  border-bottom: solid 1px #333333;
+  color: #FFFFFF;
+  height: 49px;
+}
+
+#reference {
+  position: relative;
+  background-color: #DEDEDE;
+  width: 300px;
+  float: right;
+}
+
+#reference #detail {
+  position: absolute;
+  top: 350px;
+  width: 300px;
+  background-color: #DEDEDE;
+  padding-top: 10px;
+  border-style: solid none none solid;
+  border-width: 1px;
+}
+
+#reference #detail .caption {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+#reference #detail #request {
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#reference #detail #request .coverart img {
+  width: 200px;
+  height: 200px;
+  border: solid 1px #000000;
+}
+
+#reference #detail #request .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#reference #detail #request .artist {
+  font-size: 15px;
+}
+
+#reference #detail #request .album {
+  float: left;
+}
+
+#content {
+  margin-right: 300px;
+  background-color: #FFFFFF;
+  height: 95%;  
+}
+
+.request {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.request .art {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.request .name{
+  position: absolute;
+  font-size: 14px;
+  top: 4px;
+  left: 42px;
+  height: 18px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.request .artist {
+  position: absolute;
+  font-size: 11px;
+  top: 18px;
+  left: 42px;
+  height: 14px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.nowplaying .art {
+  width: 45px;
+  height: 45px;
+}
+
+.nowplaying .name{
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: 5;
+  left: 55px;
+  height: 23px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.nowplaying .artist {
+  position: absolute;
+  font-size: 11px;
+  top: 23px;
+  left: 55px;
+  height: 14px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.request.middrag {
+  background-color: #FFFFFF !important;
+  border: 1px solid #000000;
+  z-index: 1000;
+}
+
+#musictree {
+  overflow: scroll;
+  height: 95%;
+}
+
+#musictree, #musictree ul {
+  padding-left:20px;
+  list-style: none;
+}
+#musictree ul li.albuminfo { 
+  display: none;
+}
+
+#musictree .artist {
+  cursor: pointer;
+}
+
+#musictree .album {
+  margin: 10px 0 5px 20px;
+  clear: left;
+}
+
+#musictree .album img {
+  border: solid 1px #FFFFFF;
+  width: 45px;
+  margin-right: 2px;
+  padding: 3px;
+  float: left;
+}
+
+#musictree .album img.active {
+  margin-right: 12px;
+}
+
+#musictree div.album:hover {
+  cursor: pointer;
+}
+
+#musictree div.album:hover img {
+  border-color: #000000;
+}
+
+#musictree .album .detail {
+  position: relative;
+  padding-top: 3px;
+}
+
+#musictree .album .detail .name {
+  font-weight: bold;
+}
+
+#musictree .album .detail .year {
+  font-size: 11px;
+}
+
+#musictree .album .detail .tracks {
+  position: absolute;
+  top: 40px;
+  left: 215px;
+  list-style-type: decimal;
+  display: none;
+}
+
+
+#musictree .album .detail .tracks .track {
+  color: #999999;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+#musictree .album .detail .tracks .track.queueable { 
+  color: #000000;
+  font-weight: bold; 
+}
+
+#musictree .album .detail ul.tracks li.track:hover {
+  font-style: italic;
+  background-color: #FFFFCC !important;
+}
+
+#albumtemplate { 
+  display: none; 
+}
+
+.clear {
+  clear: both;
+}
+
+#queue {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: solid 1px #666666;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#queue .detail {
+  padding-left: 5px;
+}
+
+#queue .detail .coverart {
+  width: 200px;
+  height: 300px;
+}
+
+#queue .request {
+  cursor: pointer;
+  border-bottom: solid #999999 1px;
+}
+
+
+li.request:hover {
+  background-color: #CCCCCC !important;
+}
+
+#queue.droppable-hover .request:last-child {
+  border-bottom: dashed #000000 1px;
+}
+
+#queue .request.droppable-hover {
+  border-bottom: dashed #000000 1px;
+}
+
+#queue .nowPlaying {
+  background-color: #CCCCCC;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #000000;
+}
+
+#loginForm {
+  float: left;
+}
+
+#searchField {
+  float: right;
+  width: 320px;
+}
+
+.ac_results ul li span.coverart {
+  padding-right: 5px;
+  clear: left;
+  float: left;
+}
+
+.ac_results ul li span.details {
+  float: left;
+}
+
+.ac_results ul li .track .name {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+}
+
+.ac_results ul li .track .details .artist {
+  display: inline;
+  font-size: 11px;
+}
+
+.ac_results ul li span.details .album {
+  font-size: 11px;
+}
+
+form#registration fieldset label {
+  float: left;
+  width: 100px;
+  clear: left;
+}
+
+form#registration fieldset input {
+  float: left;
+  width: 200px;
+  margin-bottom: 2px;
+}
+
+form#addalbum_form div.file {
+  clear: left;
+}
+
+form#addalbum_form div.file div {
+  float: left;
+  width: 100px;
+  height: 16px;
+  overflow: hidden;
+}
+
+form#addalbum_form div.file div.header {
+  font-weight: bold;
+}
+
+form#addalbum_form div.file div.path, form#addalbum_form div.file div.name, form#addalbum_form div.file div.path input, form#addalbum_form div.file div.name input {
+  width: 200px;
+}

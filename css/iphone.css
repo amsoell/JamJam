@@ -1,0 +1,42 @@
+body {
+  font-family: "Trebuchet MS";
+  font-size: 12px;
+}
+
+body {
+  text-align: center;
+}
+
+#page {
+  width: 100%;
+  text-align: center;
+}
+
+#page>div {
+  padding: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+#nowplaying, #queue .request {
+  padding: 20px
+}
+
+#nowplaying img, #queue .request img {
+  float: left;
+  border: 1px solid #666;
+  padding: 3px;
+}
+
+#nowplaying .detail, #queue .request .detail { 
+  padding-left: 20px;
+  font-size: 36px;
+  float: left;
+}
+
+.clear {
+  clear: left;
+}
